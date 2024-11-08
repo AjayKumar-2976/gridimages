@@ -1,0 +1,175 @@
+<html>
+
+<head>
+   <title>GALLERY</title>
+   <meta name="content" content="about flex">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      body{
+         background-color: antiquewhite;
+      }
+      .container {
+
+         width:800px;
+         height:1090px;
+         display: grid;
+         gap: 10px;
+         background-color:mediumturquoise;
+
+         grid-template-areas:
+            "item1 item2"
+             "item3 item4 "
+            "item5  item6"
+            "item7  item8"
+            " item9 item10";
+            margin-left: 100px;
+
+      }
+
+      img{
+         width: 300px;
+         height: 150px;
+         border-color: aliceblue;
+        
+         
+      }
+
+      .item1:hover {
+         grid-area: item1;
+         width:200px;
+         height:150px;
+         transform: rotate(-30deg);
+         border-style:groove;
+         border-radius: 50px;
+
+      }
+
+      .item2:hover {
+         grid-area: item2;
+         width:200px;
+         height:150px;
+         transform: rotate(30deg);
+         border-style:groove;
+         border-radius: 50px;
+      }
+
+      .item3:hover {
+         grid-area: item3;
+         width:200px;
+         height:150px;
+         transform: skewX(40deg);
+         border-style:groove;
+         border-radius: 50px;
+      }
+
+      .item4:hover {
+         grid-area: item4;
+         width:200px;
+         height:150px;
+         transform: rotate(150deg);
+         border-style:groove;
+         border-radius: 50px;
+      }
+
+      .item5:hover {
+         grid-area: item5;
+         width:200px;
+         height:150px;
+         transform: scaleY(1.5);
+         border-style:groove;
+         border-radius: 50px;
+         
+      }
+
+
+      .item6:hover {
+         grid-area: item6;
+         width:200px;
+         height:150px;
+         transform: perspective(400px) rotateY(45deg);
+         border-style:groove;
+         border-radius: 50px;
+      }
+
+      .item7:hover {
+         border-radius: 50px;
+         grid-area: item7;
+         width:200px;
+         height:150px;
+        transform: rotateY(78deg) scaleY(1.5)
+        
+       
+      }
+
+      .item8:hover {
+         border-radius: 50px;
+         grid-area: item8;
+         width:200px;
+         height:150px;
+         transform:  translate3d(-40px, 40px, -40px)
+         
+      }
+
+      .item9:hover {
+         grid-area: item9;
+         width:200px;
+         height:150px;
+         transform:rotateX(140deg);
+         border-style:groove;
+         border-radius: 50px;
+      }
+
+      .item10:hover {
+         grid-area: item10;
+         width:200px;
+         height:150px;
+         transform:rotateZ(30deg);
+         border-style:groove;
+         border-radius: 50px;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        
+        .container{
+
+        grid-template-areas:
+            "item1 item2"
+             "item3 item4 "
+            "item5  item6"
+            "item7  item8"
+            " item9 item10";
+
+      }
+
+      img{
+         width: 50%;
+         height: 40%;
+         border-color: aliceblue;
+        
+         
+      }
+      
+   }
+   </style>
+
+</head>
+
+<body>
+   <div class="container">
+
+      <img src="n1.jpeg" class="item1">
+      <img src="n2.jpeg" class="item2">
+      <img src="n3.jpeg" class="item3">
+      <img src="n4.jpeg" class="item4">
+      <img src="n5.jpeg" class="item5">
+      <img src="n6.jpeg" class="item6">
+      <img src="n7.jpeg" class="item7">
+      <img src="n8.jpeg" class="item8">
+      <img src="n9.jpeg" class="item9">
+      <img src="blog2.jpg" class="item10">
+
+   </div>
+</body>
+
+</html>
